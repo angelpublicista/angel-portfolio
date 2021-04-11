@@ -1,0 +1,28 @@
+@import '../../sass/variables'
+.header-app
+    .nav-item
+        padding: 0
+        padding-left: 2em
+    .nav-link
+        color: white
+        font-size: 15px
+        font-family: 'Poppins', sans-serif
+        font-weight: 500
+        letter-spacing: 1px
+        position: relative
+        padding: 0
+        padding-bottom: .6em
+        transition: $tr
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 0px
+            height: 2px
+            background-color: $p-color
+            transition: $tr
+        &:hover, &.active
+            color: $p-color
+            &::before
+                width: 30px

@@ -1,0 +1,26 @@
+@import './../../sass/variables'
+
+.fixed-social-nav
+    position: absolute
+    bottom: 50px
+    left: 20px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: center
+    height: 100%
+    .nav-link
+        color: white
+        transform: rotate(-90deg)
+        transition: $tr
+        &:hover
+            color: $p-color
+    .line-menu
+        height: 100px
+        width: 2px
+        margin-top: 1em
+        background-color: white
+        transition: $tr
+    &:hover
+        .line-menu
+            height: 200px
