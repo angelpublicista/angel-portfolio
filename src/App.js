@@ -7,15 +7,32 @@ import './sass/app.sass';
 import "~/../slick-carousel/slick/slick.css"; 
 import "~/../slick-carousel/slick/slick-theme.css";
 import SocialIcons from './components/social-icons/SocialIcons';
+import Portfolio from './components/Portfolio/Portfolio';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <AboutMe />
-      <SocialIcons />
-      <Footer/>
-    </div>
+    <Router>
+        <div className="App">
+          <Header/>
+            <Switch>
+                <Route path="/portfolio">
+                  <Portfolio />
+                </Route>
+
+                <Route path="/" exact>
+                  <AboutMe />
+                </Route>
+            </Switch>
+          <SocialIcons />
+          <Footer/>
+        </div>
+    </Router>
   );
 }
 
