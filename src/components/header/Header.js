@@ -10,7 +10,17 @@ class Header extends Component {
             <header className="py-4 header-app">
                 <Container>
                     <Row className="align-items-center justify-content-center">
-                        <Col></Col>
+                        <Col>
+                            <Nav className="nav-lang align-items-center">
+                                <Nav.Item>
+                                    <Nav.Link title="Español" alt="Español">ES</Nav.Link>
+                                </Nav.Item>
+
+                                <Nav.Item>
+                                    <Nav.Link className="active" title="English" alt="English">EN</Nav.Link>
+                                </Nav.Item>
+                            </Nav>
+                        </Col>
                         <Col className="text-center">
                             <a href="#"><img src={Logo}></img></a>
                         </Col>
@@ -29,7 +39,9 @@ class Header extends Component {
                                 </Nav.Item>
 
                                 <Nav.Item>
-                                    <Nav.Link>TALK US</Nav.Link>
+                                    <NavLink to="/talk-us" className="nav-link" activeClassName="active">
+                                        TALK US
+                                    </NavLink>
                                 </Nav.Item>
                             </Nav>
                         </Col>

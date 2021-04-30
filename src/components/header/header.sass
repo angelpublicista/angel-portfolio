@@ -26,3 +26,15 @@
             color: $p-color
             &::before
                 width: 30px
+    .nav-lang
+        .nav-item
+            padding: 0px
+        .nav-link
+            margin-right: 10px
+            &:hover, &.active
+                color: white
+                opacity: .6
+                &::before
+                    width: 0px
+            &.active
+                pointer-events: none
