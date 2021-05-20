@@ -23,12 +23,12 @@ class AboutMe extends Component {
     }
     render() {
         return (
-            <section className="section">
-                <Container>
+            <section className="section body-content">
+                <Container className="h-100">
                     <div className="position-absolute parallax-scene">
                         <img data-depth="0.6" src={AboutText} className="bg-text"></img> 
                     </div>
-                    <Row className="py-5">
+                    <Row className="py-5 h-100 align-items-center">
                         <Col xs={12} lg={5} className="section-name" data-aos="fade-right" data-aos-duration="1000">
                             <h4>Hello</h4>
                             <h2>I'm Angel Burgos</h2>

@@ -24,13 +24,17 @@ class Portfolio extends Component {
     
     render() {
         return (
-            <section className="section">
-                <Container>
+            <section className="section body-content">
+                <Container className="h-100">
                     <div className="position-absolute parallax-scene">
                         <img data-depth="0.6" src={PortfolioText} className="bg-text"></img>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1000">
-                        <SliderPortfolio />
+                    <div data-aos="fade-up" data-aos-duration="1000" className="h-100">
+                        <Row className="h-100 align-items-center">
+                            <Col xs={12}>
+                                <SliderPortfolio />
+                            </Col>
+                        </Row>
                     </div>  
                 </Container>
             </section>

@@ -25,19 +25,19 @@ class TalkUs extends Component {
     }
     render() {
         return (
-            <section className="section section-talk-us">
-                <Container>
+            <section className="section section-talk-us body-content">
+                <Container className="h-100">
                     <div className="position-absolute parallax-scene">
                         <img data-depth="0.6" src={TalkText} className="bg-text"></img> 
                     </div>
-                    <Row className="py-5">
-                        <Col xs={12} lg={4} className="position-relative">
+                    <Row className="py-5 h-100 justify-content-between align-items-end">
+                        <Col xs={12} lg={6} className="position-relative">
                             <div className="photo-man parallax-scene">
                                 <img data-depth="0.1" src={PhotoMan} className="img-fluid"></img>
                             </div>
                         </Col>
 
-                        <Col xs={12} lg={4}>
+                        <Col xs={12} lg={6}>
                             <div className="info-contact d-flex flex-column justify-content-end">
                                 <h5 className="text-right">INFO CONTACT</h5>
                                 <Nav className="flex-column">
@@ -56,9 +56,6 @@ class TalkUs extends Component {
                                     </Nav.Item>
                                 </Nav>
                             </div>
-                        </Col>
-
-                        <Col xs={12} lg={4}>
                             <div className="contact-form">
                                 <Form>
                                     <Form.Group>
