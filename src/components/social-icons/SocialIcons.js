@@ -14,10 +14,10 @@ class SocialIcons extends Component {
                         <Nav.Link target={"_blank"} href={"https://www.digitalocean.com/community/tutorials/how-to-use-font-awesome-5-with-react-es"}><FontAwesomeIcon icon={faLinkedinIn} /></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link><FontAwesomeIcon icon={faGithub} /></Nav.Link>
+                        <Nav.Link target={"_blank"} href={"https://github.com/angelpublicista"}><FontAwesomeIcon icon={faGithub} /></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link><FontAwesomeIcon icon={faInstagram} /></Nav.Link>
+                        <Nav.Link target={"_blank"} href={"https://www.instagram.com/angelweblover"}><FontAwesomeIcon icon={faInstagram} /></Nav.Link>
                     </Nav.Item> 
                </Nav> 
             </div>
